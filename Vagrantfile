@@ -23,5 +23,6 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.synced_folder "sp22_cs438_ericsz2", "/home/vagrant/sp22_cs438_ericsz2"
+    config.vm.synced_folder "cs438", "/home/vagrant/cs438"
     config.vm.provision :shell, path: "provision.sh"
 end
